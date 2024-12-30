@@ -14,10 +14,15 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.resolve(__dirname, "./config/.env") });
 
+const corsOptions = {
+  origin: "https://task-manager-front-end-phi.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+};
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
-
 app.get("/", (req, res) => {
   res.send("Todo ok");
 });
