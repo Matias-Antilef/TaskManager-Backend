@@ -50,7 +50,7 @@ const userLogin = async (req, res) => {
       .status(200)
       .json({ message: "User logged in successfully", token });
   } catch (error) {
-    console.error(error); // Esto imprimirá el error en la consola del servidor
+    console.error(error);
     return res
       .status(500)
       .json({ error: "Internal server error", message: error.message });
