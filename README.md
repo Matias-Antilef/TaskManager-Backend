@@ -16,8 +16,12 @@
 
 
 ## Estructura .env
+Importante en el port 5000
 
-IMPORTANTE USAR PUERTO 5000 *
+el archivo .env debe localizarse en 
+
+src/config/.env
+
 
 `SERVER_PORT=5000`
 
@@ -30,9 +34,9 @@ IMPORTANTE USAR PUERTO 5000 *
 
     - Node.js
     - Express.js
-    - express-validator
+    - Express-validator
     - MongoDB
     - Mongoose
     - Swagger
-
-
+    - JWT
+    - Bcrypt
