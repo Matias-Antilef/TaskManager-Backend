@@ -23,6 +23,7 @@ const userRegister = async (req, res) => {
     return res.status(500).json({ error: "Internal server error" });
   }
 };
+
 const userLogin = async (req, res) => {
   const errors = validationResult(req);
 

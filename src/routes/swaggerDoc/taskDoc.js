@@ -1,4 +1,4 @@
-import express, { Router } from "express";
+import express from "express";
 import {
   createTask,
   deleteTask,
@@ -6,7 +6,7 @@ import {
   getTasks,
   updateTask,
 } from "../../controller/task.controller";
-const router = Router();
+const router = express.Router();
 
 /**
  * @swagger
